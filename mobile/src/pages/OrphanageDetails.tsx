@@ -1,4 +1,5 @@
 import { Feather, FontAwesome } from '@expo/vector-icons';
+import { useRoute } from '@react-navigation/native';
 import React from 'react';
 import { Dimensions, Image, ScrollView, StyleSheet, Text, View } from 'react-native';
 import { RectButton } from 'react-native-gesture-handler';
@@ -7,6 +8,8 @@ import mapMarkerImg from '../images/map-marker.png';
 
 
 export default function OrphanageDetails() {
+  const route = useRoute();
+
   return (
     <ScrollView style={styles.container}>
       <View style={styles.imagesContainer}>
